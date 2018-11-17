@@ -10,7 +10,7 @@ public class DataProviderClass {
 
                 {"frank szwajcarski", "chf"},
                 {"dolar amerykański", "usd"},
-                {"ruble", "rub"}
+                {"rubel rosyjski", "rub"}
 
         };
     }
