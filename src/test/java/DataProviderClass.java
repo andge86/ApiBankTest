@@ -23,7 +23,9 @@ public class DataProviderClass {
 
                 {"ru"},
                 {"rubb"},
-                {"rux"}
+                {"rux"},
+                {"r"},
+                {""}
 
         };
     }
