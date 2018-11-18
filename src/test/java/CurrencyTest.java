@@ -9,10 +9,9 @@ import java.util.List;
 
 import static io.restassured.RestAssured.given;
 
-public class CurrencyTest {
+public class CurrencyTest extends BaseTest{
 
 
-final String ENDPOINT = "http://api.nbp.pl";
 
   //  Current average CHF exchange rate
   //  http://api.nbp.pl/api/exchangerates/rates/a/chf/
@@ -38,7 +37,7 @@ final String ENDPOINT = "http://api.nbp.pl";
         System.out.println("");
         CurrentAverageExchangeRate currentAverageExchangeRate = objectMapper.readValue(response.getBody().asString(), CurrentAverageExchangeRate.class);
 
-        Assert.assertEquals(currentAverageExchangeRate.getCurrency(), currency);
+     //   Assert.assertEquals(currentAverageExchangeRate.getCurrency(), currency);
 
      //   System.out.println(currentAverageExchangeRate.toString());
 List<Rates> rates = currentAverageExchangeRate.getRates();
